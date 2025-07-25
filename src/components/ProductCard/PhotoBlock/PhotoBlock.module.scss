@@ -1,0 +1,18 @@
+.photoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #525369;
+    margin-bottom: 14px;
+  }
+  img{
+    width: 225px;
+    height: 225px;
+  }
+}
