@@ -1,0 +1,59 @@
+.productCard {
+  display: flex;
+  border-bottom: 1px solid rgba(129, 132, 175, 0.15);
+  padding: 20px 30px 30px;
+
+  .userBlock{
+    padding-left: 15px;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+    width: 575px;
+    gap: 10px;
+    padding-right: 15px;
+    border-right: 1px solid #d9dae7;
+
+    .row {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 55px 0 20px;
+      height: 40px;
+      box-shadow: 0 0 2px 0 rgba(129, 132, 175, 0.25);
+      border-radius: 10px;
+
+      .label {
+        font-weight: 600;
+        color: #444;
+      }
+
+      .value {
+        font-weight: 400;
+        color: #222;
+        text-align: right;
+      }
+
+      button {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        transition: scale 0.3s ease;
+
+        &:hover {
+          scale: 1.1;
+        }
+
+        .icon {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}
