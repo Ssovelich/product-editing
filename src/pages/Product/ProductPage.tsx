@@ -3,9 +3,8 @@ import Header from "../../components/Header/Header";
 import ListListings from "../../components/ListListings/ListListings";
 import ListLocation from "../../components/ListLocation/ListLocation";
 import ProductCard from "../../components/ProductCard/ProductCard";
-// import styles from "./ProductPage.module.scss";
 
-const ProductPage = () => {
+const ProductPage: React.FC = () => {
   return (
     <>
       <Header />

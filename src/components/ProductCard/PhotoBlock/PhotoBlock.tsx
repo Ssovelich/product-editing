@@ -1,6 +1,6 @@
 import styles from "./PhotoBlock.module.scss";
 
-const PhotoBlock = () => {
+const PhotoBlock: React.FC = () => {
   return (
     <div className={styles.photoBlock}>
       <div className={styles.wrap}>

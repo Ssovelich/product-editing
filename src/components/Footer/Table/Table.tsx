@@ -1,23 +1,23 @@
 import styles from "./Table.module.scss";
 
-const headers = ["Original_id", "Same_id", "Fk_edit_employee"];
+const headers: string[] = ["Original_id", "Same_id", "Fk_edit_employee"];
 
-const repeatedRow = [["G112082", "G900559", "Script"]];
+const repeatedRow: string[][] = [["G112082", "G900559", "Script"]];
 
-const Table = () => {
+const Table: React.FC = () => {
   return (
     <table className={styles.table}>
       <thead>
         <tr>
-          {headers.map((header, i) => (
+          {headers.map((header: string, i: number) => (
             <th key={i}>{header}</th>
           ))}
         </tr>
       </thead>
       <tbody>
-        {repeatedRow.map((row, rowIndex) => (
+        {repeatedRow.map((row: string[], rowIndex: number) => (
           <tr key={rowIndex}>
-            {row.map((cell, cellIndex) => (
+            {row.map((cell: string, cellIndex: number) => (
               <td key={cellIndex}>
                 {cellIndex === row.length - 1 ? (
                   <div className={styles.cellWithIcon}>

@@ -1,6 +1,11 @@
 import styles from "../ProductCard.module.scss";
 
-const dataInfoBlock = [
+interface InfoItem {
+  label: string;
+  value: string;
+}
+
+const dataInfoBlock: InfoItem[] = [
   { label: "Brand", value: "NEC" },
   { label: "Model/Series", value: "P401W" },
   { label: "Devise P/N", value: "NP-P401W / NP23LP+" },
@@ -14,10 +19,10 @@ const dataInfoBlock = [
   { label: "Photo_device", value: "https://drive.google.com..." },
 ];
 
-const InfoBlock = () => {
+const InfoBlock: React.FC = () => {
   return (
     <div className={styles.block}>
-      {dataInfoBlock.map((item, i) => (
+      {dataInfoBlock.map((item: InfoItem, i: number) => (
         <p className={styles.row} key={i}>
           <span className={styles.label}>{item.label}</span>
           <span

@@ -1,7 +1,7 @@
 import Table from "./Table/Table";
 import styles from "./Footer.module.scss";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <section className={styles.footer}>
       <p>

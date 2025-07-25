@@ -1,8 +1,8 @@
-import ProductPage from './pages/Product/ProductPage';
-import './App.css'
+import ProductPage from "./pages/Product/ProductPage";
+import "./App.css";
 
-function App() {
-  return <ProductPage/>
-}
+const App: React.FC = () => {
+  return <ProductPage />;
+};
 
-export default App
+export default App;

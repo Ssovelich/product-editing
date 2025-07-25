@@ -1,10 +1,12 @@
 import Table from "./Table/Table";
-import styles from "./ListLocation.module.scss"
+import styles from "./ListLocation.module.scss";
 
-const ListLocation = () => {
+const ListLocation: React.FC = () => {
   return (
     <section className={styles.listLocation}>
-      <p>List Location<span>6</span></p>
+      <p>
+        List Location<span>6</span>
+      </p>
       <Table />
     </section>
   );

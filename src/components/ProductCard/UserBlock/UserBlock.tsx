@@ -1,6 +1,11 @@
 import styles from "../ProductCard.module.scss";
 
-const dataUserBlock = [
+interface InfoItem {
+  label: string;
+  value: string;
+}
+
+const dataUserBlock: InfoItem[] = [
   { label: "Sku", value: "???/P,Ne_P401W/??G112082" },
   { label: "L-user", value: "Iryna" },
   { label: "Category", value: "Projector" },
@@ -14,10 +19,10 @@ const dataUserBlock = [
   { label: "Notes", value: "----------" },
 ];
 
-const UserBlock = () => {
+const UserBlock: React.FC = () => {
   return (
     <div className={`${styles.block} ${styles.userBlock}`}>
-      {dataUserBlock.map((item, i) => (
+      {dataUserBlock.map((item: InfoItem, i: number) => (
         <p key={i} className={styles.row}>
           <span className={styles.label}>{item.label}</span>
           <span
