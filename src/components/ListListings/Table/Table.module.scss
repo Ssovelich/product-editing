@@ -54,52 +54,29 @@ $table-head-height: 46px;
   th,
   td {
     &:nth-child(1) {
-      width: 105px;
+      width: 166px;
       padding-left: 30px;
     }
     &:nth-child(2) {
-      width: 143px;
+      width: 208px;
     }
     &:nth-child(3) {
-      width: 152px;
+      width: 153px;
     }
     &:nth-child(4) {
-      width: 152px;
+      width: 135px;
     }
     &:nth-child(5) {
-      width: 77px;
+      width: 334px;
     }
     &:nth-child(6) {
-      width: 153px;
+      width: 74px;
     }
     &:nth-child(7) {
       width: 136px;
     }
     &:nth-child(8) {
       width: auto;
-    }
-  }
-
-  .cellWithIcon {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
-
-    button {
-      background: none;
-      border: none;
-      padding: 0;
-      cursor: pointer;
-
-      &:hover {
-        scale: 1.1;
-      }
-
-      .icon {
-        width: 25px;
-        height: 25px;
-      }
     }
   }
 }

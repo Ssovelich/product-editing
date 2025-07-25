@@ -1,0 +1,29 @@
+.listListings {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(129, 132, 175, 0.15);
+
+  p {
+    display: flex;
+    gap: 15px;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #525369;
+    padding-left: 30px;
+    padding-bottom: 15px;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 15px;
+      color: rgba(82, 83, 105, 0.5);
+      border-radius: 5px;
+      width: 25px;
+      height: 25px;
+      background: rgba(129, 132, 175, 0.2);
+    }
+  }
+}

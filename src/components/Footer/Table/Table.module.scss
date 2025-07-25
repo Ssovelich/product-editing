@@ -54,28 +54,13 @@ $table-head-height: 46px;
   th,
   td {
     &:nth-child(1) {
-      width: 105px;
+      width: 139px;
       padding-left: 30px;
     }
     &:nth-child(2) {
-      width: 143px;
+      width: 120px;
     }
     &:nth-child(3) {
-      width: 152px;
-    }
-    &:nth-child(4) {
-      width: 152px;
-    }
-    &:nth-child(5) {
-      width: 77px;
-    }
-    &:nth-child(6) {
-      width: 153px;
-    }
-    &:nth-child(7) {
-      width: 136px;
-    }
-    &:nth-child(8) {
       width: auto;
     }
   }

@@ -4,7 +4,7 @@ import styles from "./ListLocation.module.scss"
 const ListLocation = () => {
   return (
     <section className={styles.listLocation}>
-      <p>List Location <span>6</span></p>
+      <p>List Location<span>6</span></p>
       <Table />
     </section>
   );
