@@ -17,25 +17,31 @@ const dataInfoBlock = [
 const InfoBlock = () => {
   return (
     <div className={styles.block}>
-        {dataInfoBlock.map((item, index) => (
-          <p className={styles.row} key={index}>
-            <span className={styles.label}>{item.label}</span>
-            <span className={styles.value}>{item.value}</span>
+      {dataInfoBlock.map((item, i) => (
+        <p className={styles.row} key={i}>
+          <span className={styles.label}>{item.label}</span>
+          <span
+            className={`${styles.value} ${
+              i === dataInfoBlock.length - 1 ? styles.specialValue : ""
+            }`}
+          >
+            {item.value}
+          </span>
 
-            {index === 0 && (
-              <button type="button">
-                <img className={styles.icon} src="/icons/more.svg" alt="More" />
-              </button>
-            )}
-            {index === dataInfoBlock.length - 1 && (
-              <button type="button">
-                <img className={styles.icon} src="/icons/link.svg" alt="Link" />
-              </button>
-            )}
-          </p>
-        ))}
-      </div>
-  )
-}
+          {i === 0 && (
+            <button type="button">
+              <img className={styles.icon} src="/icons/more.svg" alt="More" />
+            </button>
+          )}
+          {i === dataInfoBlock.length - 1 && (
+            <button type="button">
+              <img className={styles.icon} src="/icons/link.svg" alt="Link" />
+            </button>
+          )}
+        </p>
+      ))}
+    </div>
+  );
+};
 
-export default InfoBlock
+export default InfoBlock;

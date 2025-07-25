@@ -17,26 +17,28 @@ const dataUserBlock = [
 const UserBlock = () => {
   return (
     <div className={`${styles.block} ${styles.userBlock}`}>
-      {dataUserBlock.map((item, idx) => (
-        <p key={idx} className={styles.row}>
-          <span>{item.label}</span>
-          <span>{item.value}</span>
+      {dataUserBlock.map((item, i) => (
+        <p key={i} className={styles.row}>
+          <span className={styles.label}>{item.label}</span>
+          <span
+            className={`${styles.value} ${
+              i === 7 || i === dataUserBlock.length - 1
+                ? styles.specialValue
+                : ""
+            }`}
+          >
+            {item.value}
+          </span>
 
-          {idx < 4 && (
+          {i < 4 && (
             <button type="button">
-              <img
-                className={styles.icon}
-                src="/icons/more.svg" alt="More"
-              />
+              <img className={styles.icon} src="/icons/more.svg" alt="More" />
             </button>
           )}
 
-          {idx === 7 && (
+          {i === 7 && (
             <button type="button">
-              <img
-                className={styles.icon}
-                src="/icons/link.svg" alt="Link"
-              />
+              <img className={styles.icon} src="/icons/link.svg" alt="Link" />
             </button>
           )}
         </p>

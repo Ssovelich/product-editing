@@ -3,7 +3,7 @@
   border-bottom: 1px solid rgba(129, 132, 175, 0.15);
   padding: 20px 30px 30px;
 
-  .userBlock{
+  .userBlock {
     padding-left: 15px;
   }
 
@@ -26,14 +26,21 @@
       border-radius: 10px;
 
       .label {
-        font-weight: 600;
-        color: #444;
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: capitalize;
+        color: #525369;
       }
 
       .value {
-        font-weight: 400;
-        color: #222;
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 22px;
+        color: #525369;
         text-align: right;
+      }
+      .specialValue{
+       font-size: 18px;
       }
 
       button {
