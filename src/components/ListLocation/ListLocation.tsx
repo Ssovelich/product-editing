@@ -1,9 +1,13 @@
-
+import Table from "./Table/Table";
+import styles from "./ListLocation.module.scss"
 
 const ListLocation = () => {
   return (
-    <div>ListLocation</div>
-  )
-}
+    <section className={styles.listLocation}>
+      <p>List Location <span>6</span></p>
+      <Table />
+    </section>
+  );
+};
 
-export default ListLocation
+export default ListLocation;

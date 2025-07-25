@@ -1,0 +1,23 @@
+.listLocation {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(129, 132, 175, 0.15);
+
+  p {
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #525369;
+    padding-left: 30px;
+    padding-bottom: 15px;
+
+    span {
+      font-weight: 700;
+      font-size: 15px;
+      color: rgba(82, 83, 105, 0.5);
+      border-radius: 5px;
+      padding: 4px 8.5px;
+                  background: rgba(129, 132, 175, 0.2);
+    }
+  }
+}
